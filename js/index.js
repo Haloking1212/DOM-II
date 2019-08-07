@@ -74,6 +74,6 @@ testingHeaderClick.addEventListener("click", function() {
 const youShallNotPass = document.querySelector("a");
 
 youShallNotPass.addEventListener("click", function(event){
-    document.querySelectorAll("a")[0].innerHTML += " I was thinking about loading the next page but you already in the home page idiot.";
+    document.querySelectorAll("a")[0].innerHTML += " I was thinking about loading the next page but you already in the home page";
     event.preventDefault();
 },false);
