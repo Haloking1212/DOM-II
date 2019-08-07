@@ -68,3 +68,12 @@ const testingHeaderClick = document.querySelector("h4");
 testingHeaderClick.addEventListener("click", function() {
     console.log("I'm hot like the sun.")
 })
+
+//preventDefault()
+
+const youShallNotPass = document.querySelector("a");
+
+youShallNotPass.addEventListener("click", function(event){
+    document.querySelectorAll("a")[0].innerHTML += " I was thinking about loading the next page but you already in the home page idiot.";
+    event.preventDefault();
+},false);
